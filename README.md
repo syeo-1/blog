@@ -18,4 +18,8 @@ for running locally, since I'm on windows I have to run using the following comm
     ### run the app! (run the following to start up the app in powershell, and go to the url provided by the script on start-up)
     flask run
 
+#### using python-dotenv
+
+to configure environment variables, can pip install python-dotenv and set an environment variable for FLASK_APP using a .flaskenv file!
+
 
