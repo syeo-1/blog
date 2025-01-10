@@ -72,4 +72,21 @@ There's also the case where if I'm working on linux/mac you don't want git to au
     $ git config --global core.autocrlf input
 
 
+when working on the application, set debug mode to true. This is helpful for getting more info when troubleshooting errors. To set it to true, do the following in the terminal:
+
+for unix/linux/mac
+
+    export FLASK_DEBUG=1
+
+for windows (powershell)
+
+    $env:FLASK_DEBUG="1"
+
+to confirm that the debugger is working, when inputting the command "flask run" you should see that debug mode is set to "on". To turn the debugger off, just set it again to 0.
+
+Setting the debugger on also enablesthe reloader, which automatically restarts the application anytime a source file is modified!
+
+Be sure to disable debug mode when putting the app into production! The debugger allows the user to remotely execute code on the server!
+
+
 
